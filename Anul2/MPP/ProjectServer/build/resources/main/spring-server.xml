@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+http://www.springframework.org/schema/util ">
+
+    <util:properties id="dbProps" location="classpath:Server.properties"/>
+
+    <bean id="angajatDbRepository" class="chat.repository.dbrepos.AngajatDBRepo">
+        <constructor-arg ref="dbProps"/>
+    </bean>
+
+    <bean id="biletDbRepository" class="chat.repository.dbrepos.BiletDBRepo">
+        <constructor-arg ref="dbProps"/>
+    </bean>
+
+    <bean id="spectacolDbRepository" class="chat.repository.dbrepos.SpectacolDBRepo">
+        <constructor-arg ref="dbProps"/>
+    </bean>
+
+    <bean id="service" class="Server.ServerImpl">
+        <constructor-arg ref="angajatDbRepository"/>
+        <constructor-arg ref="spectacolDbRepository"/>
+        <constructor-arg ref="biletDbRepository"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+        <property name="serviceName" value="myServer"/>
+        <property name="service" ref="service"/>
+        <property name="serviceInterface" value="Services.IService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+</beans>
