@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>C:/uni/ddir2501/src</OriginalElement>
+  <nodes>
+    <node x="149.0" y="1172.0">inventory.repository.Repository</node>
+    <node x="505.0" y="1172.0">inventory.repository.InventoryRepositoryFile</node>
+    <node x="1770.0" y="1276.0">inventory.validator.PartValidator</node>
+    <node x="1084.0" y="1172.0">inventory.service.InventoryService</node>
+    <node x="254.0" y="1377.0">inventory.repository.PartRepository</node>
+    <node x="1473.0" y="589.0">inventory.model.Product</node>
+    <node x="404.0" y="1691.0">inventory.Main</node>
+    <node x="805.0" y="1172.0">inventory.model.Inventory</node>
+    <node x="153.75" y="0.0">inventory.model.Part</node>
+    <node x="0.0" y="1366.0">inventory.repository.ProductRepository</node>
+    <node x="871.0" y="770.0">inventory.controller.AddProductController</node>
+    <node x="313.0" y="418.0">inventory.model.OutsourcedPart</node>
+    <node x="0.0" y="1691.0">inventory.validator.ValidationException</node>
+    <node x="280.0" y="792.0">inventory.controller.AddPartController</node>
+    <node x="1151.0" y="781.0">inventory.controller.ModifyPartController</node>
+    <node x="569.0" y="693.0">inventory.controller.MainScreenController</node>
+    <node x="1687.0" y="1172.0">inventory.validator.Validator</node>
+    <node x="622.5" y="589.0">inventory.controller.Controller</node>
+    <node x="0.0" y="759.0">inventory.controller.ModifyProductController</node>
+    <node x="0.0" y="418.0">inventory.model.InhousePart</node>
+    <node x="1582.0" y="1276.0">inventory.validator.ProductValidator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="inventory.model.OutsourcedPart" target="inventory.model.Part" relationship="GENERALIZATION">
+      <point x="0.0" y="-63.0" />
+      <point x="478.0" y="393.0" />
+      <point x="312.25" y="393.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+    <edge source="inventory.validator.ProductValidator" target="inventory.validator.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="1666.0" y="1251.0" />
+      <point x="1755.0" y="1251.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.AddPartController" target="inventory.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-118.0" />
+      <point x="414.5" y="668.0" />
+      <point x="710.0" y="668.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.ModifyPartController" target="inventory.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-129.0" />
+      <point x="1289.5" y="668.0" />
+      <point x="710.0" y="668.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.validator.PartValidator" target="inventory.validator.Validator" relationship="REALIZATION">
+      <point x="0.0" y="-39.0" />
+      <point x="1844.0" y="1251.0" />
+      <point x="1755.0" y="1251.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.AddProductController" target="inventory.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-140.0" />
+      <point x="1001.0" y="668.0" />
+      <point x="710.0" y="668.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.repository.PartRepository" target="inventory.repository.Repository" relationship="REALIZATION">
+      <point x="0.0" y="-129.0" />
+      <point x="357.0" y="1341.0" />
+      <point x="237.0" y="1341.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="inventory.controller.ModifyProductController" target="inventory.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-151.0" />
+      <point x="130.0" y="668.0" />
+      <point x="710.0" y="668.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.controller.MainScreenController" target="inventory.controller.Controller" relationship="REALIZATION">
+      <point x="0.0" y="-217.0" />
+      <point x="0.0" y="27.0" />
+    </edge>
+    <edge source="inventory.repository.ProductRepository" target="inventory.repository.Repository" relationship="REALIZATION">
+      <point x="0.0" y="-140.0" />
+      <point x="117.0" y="1341.0" />
+      <point x="237.0" y="1341.0" />
+      <point x="0.0" y="72.0" />
+    </edge>
+    <edge source="inventory.model.InhousePart" target="inventory.model.Part" relationship="GENERALIZATION">
+      <point x="0.0" y="-63.0" />
+      <point x="146.5" y="393.0" />
+      <point x="312.25" y="393.0" />
+      <point x="0.0" y="184.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.8500000000000001" showDependencies="false" x="461.7647058823529" y="622.7058823529412" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
