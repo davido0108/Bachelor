@@ -1,0 +1,11 @@
+%1 10000010 10100000000000000000000
+
+%bit de semn - 1 => nr negativ
+
+%Exponentul - 10000010 => E=bin2dec('10000010')-127=3
+
+%Mantisa - 1,01000...
+
+%Reprezentarea in baza 2: 2^3*1,01 => 1010 in baza 2
+
+%Rezultatul final: (-1)*bin2dec('1010') = -10
