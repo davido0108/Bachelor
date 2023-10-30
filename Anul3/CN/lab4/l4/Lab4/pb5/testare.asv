@@ -1,0 +1,37 @@
+% pkg load symbolic;
+%pkg load statistics;
+
+n=10;
+b=[];
+for i=2:-1:-n+2
+    b=[b;i];
+end
+A=[];
+for i=1:n+1
+    aux=zeros(1,n+1);
+    for j=1:n+1
+        if i == j
+            aux(j)=1;
+            continue
+        end
+        if n+1 == j
+            aux(j)=1;
+            continue
+        end
+        if j<i
+            aux(j)=-1;
+        end
+    end
+    A=
+end
+% B=randi(3,7,7);   
+% A = B'*B;         % asta genereaza matricea simetrica
+% det(A);           % asa calculam det!=0 
+% b = [1,2,3,4,5,6,7]';
+% cho = choleskySolve(A, b);
+% eli = eliminareGauss(A, b);
+% lup = LUPSolve(A, b);
+% 
+% eli
+% lup
+% cho
